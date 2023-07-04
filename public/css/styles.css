@@ -525,6 +525,9 @@ video {
 .min-h-screen {
   min-height: 100vh;
 }
+.w-10 {
+  width: 2.5rem;
+}
 .w-14 {
   width: 3.5rem;
 }
@@ -551,9 +554,6 @@ video {
 }
 .w-full {
   width: 100%;
-}
-.w-10 {
-  width: 2.5rem;
 }
 .max-w-mx {
   max-width: 1109px;
@@ -856,10 +856,6 @@ th{
     display: flex;
   }
 
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .md\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -878,11 +874,6 @@ th{
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .md\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
   }
 }
 
