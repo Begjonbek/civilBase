@@ -3,7 +3,81 @@
 @tailwind utilities;
 
 
+/* Hamburger Menu */
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+  }
+  
+  .hamburger-top,
+  .hamburger-middle,
+  .hamburger-bottom {
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    top: 0;
+    left: 0;
+    background: #000;
+    transform: rotate(0);
+    transition: all 0.5s;
+  }
+  
+  .hamburger-middle {
+    transform: translateY(7px);
+  }
+  
+  .hamburger-bottom {
+    transform: translateY(14px);
+  }
+  
+  .open {
+    transform: rotate(90deg);
+  }
+  
+  .open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translateX(6px);
+  }
+  
+  .open .hamburger-middle {
+    display: none;
+  }
+  
+  .open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translateX(-6px);
+  }
 
 th{
     text-align: left;
 }
+
+/* width */
+.overflow-x-scroll::-webkit-scrollbar {
+    height: 10px;
+    width: 100%;
+  }
+  
+  /* Track */
+  .overflow-x-scroll::-webkit-scrollbar-track {
+    background-color: #8bcaef;
+  }
+  
+   /* Handle */
+  .overflow-x-scroll::-webkit-scrollbar-thumb {
+    background: rgb(133, 198, 236);
+    --tw-gradient-from: #7ddae6;
+    --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to,rgba(133, 198, 236    ,0));
+    --tw-gradient-to: #78dce6;
+    background-image: linear-gradient(to bottom,var(--tw-gradient-stops));
+    height: 4px;
+  }
+  
+  /* Handle on hover */
+  .overflow-x-scroll::-webkit-scrollbar-thumb:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 229 82/var(--tw-bg-opacity));
+  }
+
+

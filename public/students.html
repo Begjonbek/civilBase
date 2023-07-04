@@ -15,13 +15,13 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="../src/styles.css">
     <!-- title -->
-    <title>Home</title>
+    <title>Students</title>
   </head>
   <body class="font-inter " >
     <!-- saidbar -->
     <div class="max-w-xll flex mx-auto relative" >
       <!-- simple -->
-      <!-- desktop menu -->
+      <!-- desktop menu-->
       <div 
         class="w-[20%] hidden lg:flex flex-col min-h-screen border border-gray-200  bg-white"
       >
@@ -184,16 +184,49 @@
         </header>
         <!-- main -->
         <section class="main pl-8 pt-8 pr-5">
-            <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-9">Minnesota Daycare</h2>
-            <h3 class="font-semibold text-gray-500 text-base sm:text-lg md:text-xl mb-5">Recent Activity</h3>
+            <!-- main title -->
+            <div class="max-w-mxl flex items-center justify-between pr-4 mx-auto mb-6">
+                <div class="">
+                    <div class="flex items-center gap-6 text-gray-500 mb-2">
+                        <a href="#">Health Services</a>
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292894 9.70711C-0.0976307 9.31658 -0.0976307 8.68342 0.292894 8.29289L3.58579 5L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292894C0.683417 -0.0976312 1.31658 -0.0976312 1.70711 0.292894L5.70711 4.29289C6.09763 4.68342 6.09763 5.31658 5.70711 5.70711L1.70711 9.70711C1.31658 10.0976 0.683418 10.0976 0.292894 9.70711Z" fill="#9CA3AF"/>
+                        </svg>
+                        <a href="#">Daycare</a>
+                    </div>
+                    <h2 class="text-4xl font-bold text-gray-900">Minnesota Daycare</h2>
+                </div>
+                <div class="max-w-sm flex items-center justify-between gap-3 text-xl">
+                  <div class="flex items-center gap-2 py-2 px-4 border border-gray-500 rounded-md">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.5858 0.585786C11.3668 -0.195262 12.6332 -0.195262 13.4142 0.585786C14.1953 1.36683 14.1953 2.63316 13.4142 3.41421L12.6213 4.20711L9.79289 1.37868L10.5858 0.585786Z" fill="#6B7280"/>
+                      <path d="M8.37868 2.79289L0 11.1716V14H2.82842L11.2071 5.62132L8.37868 2.79289Z" fill="#6B7280"/>
+                    </svg>
+                      <span>Edit</span>
+                  </div>
+                  <div class="flex items-center gap-2.5 py-2 px-4 border border-gray-500 rounded-md">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.5858 2.58579C11.3668 1.80474 12.6331 1.80474 13.4142 2.58579C14.1952 3.36683 14.1952 4.63316 13.4142 5.41421L10.4142 8.41421C9.63315 9.19526 8.36682 9.19526 7.58577 8.41421C7.19524 8.02369 6.56208 8.02369 6.17156 8.41421C5.78103 8.80474 5.78103 9.4379 6.17156 9.82843C7.73365 11.3905 10.2663 11.3905 11.8284 9.82843L14.8284 6.82843C16.3905 5.26633 16.3905 2.73367 14.8284 1.17157C13.2663 -0.390524 10.7337 -0.390524 9.17156 1.17157L7.67156 2.67157C7.28103 3.0621 7.28103 3.69526 7.67156 4.08579C8.06208 4.47631 8.69524 4.47631 9.08577 4.08579L10.5858 2.58579Z" fill="#6B7280"/>
+                      <path d="M5.58579 7.58579C6.36683 6.80474 7.63316 6.80474 8.41421 7.58579C8.80474 7.97631 9.4379 7.97631 9.82843 7.58579C10.219 7.19526 10.219 6.5621 9.82843 6.17157C8.26633 4.60948 5.73367 4.60948 4.17157 6.17157L1.17157 9.17157C-0.390524 10.7337 -0.390524 13.2663 1.17157 14.8284C2.73367 16.3905 5.26633 16.3905 6.82843 14.8284L8.32843 13.3284C8.71895 12.9379 8.71895 12.3047 8.32843 11.9142C7.9379 11.5237 7.30474 11.5237 6.91421 11.9142L5.41421 13.4142C4.63316 14.1953 3.36684 14.1953 2.58579 13.4142C1.80474 12.6332 1.80474 11.3668 2.58579 10.5858L5.58579 7.58579Z" fill="#6B7280"/>
+                    </svg>
+                    <span>View</span>
+                  </div>
+                    <button class="flex items-center gap-2 bg-indigo-600 text-white py-2 px-4 rounded-md">
+                      <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L5.70711 9.70711C5.31658 10.0976 4.68342 10.0976 4.29289 9.70711L0.292893 5.70711C-0.0976311 5.31658 -0.0976311 4.68342 0.292893 4.29289C0.683417 3.90237 1.31658 3.90237 1.70711 4.29289L5 7.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893Z" fill="white"/>
+                      </svg>
+                      <span>Publish</span>
+                    </button>
+                </div>
+            </div>
             <!-- main cart -->
+            <h3 class="font-semibold text-gray-500 text-base sm:text-lg md:text-xl mb-5">Recent Activity</h3>
             <div class="max-w-mx border-l border-r border-b rounded-b-lg border-gray-200  border-collapse mb-8">
                 <!-- main menu  -->
-                
                   <div class="flex items-start sm:items-center border-b border-gray-200  pl-3 pr-4 sm:pr-8 md:pl-6 py-2 md:py-4 ">
                     <!-- img -->
                     <div class="mr-4">
-                      <img src="./img/header/avatar-1.svg" alt="logo">
+                      <img src="./img/students/avatar.svg" alt="logo">
                     </div>
                     <!--main list -->
                     <div class="grid grid-cols-1 w-full sm:grid-cols-2 gap-2 sm:gap-5 ">
@@ -210,7 +243,7 @@
                       </div>
                       <!-- main item 2 -->
                       <div>
-                        <p class="text-[10px] sm:text-sm  text-gray-900 mb-1 sm:mb-2">9:30 AM, April 2, 2023</p>
+                        <p class="text-[10px] sm:text-sm  text-gray-900 mb-1 sm:mb-2">9:30 AM, January 7, 2020</p>
                         <div class="flex items-center gap-2">
                           <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 18C14.9183 18 18.5 14.4183 18.5 10C18.5 5.58172 14.9183 2 10.5 2C6.08172 2 2.5 5.58172 2.5 10C2.5 14.4183 6.08172 18 10.5 18ZM14.2071 8.70711C14.5976 8.31658 14.5976 7.68342 14.2071 7.29289C13.8166 6.90237 13.1834 6.90237 12.7929 7.29289L9.5 10.5858L8.20711 9.29289C7.81658 8.90237 7.18342 8.90237 6.79289 9.29289C6.40237 9.68342 6.40237 10.3166 6.79289 10.7071L8.79289 12.7071C9.18342 13.0976 9.81658 13.0976 10.2071 12.7071L14.2071 8.70711Z" fill="#34D399"/>
@@ -229,7 +262,7 @@
                   <div class="flex sm:items-center border-b border-gray-200 pl-3 pr-4 sm:pr-8 md:pl-6 py-2 md:py-4  ">
                     <!-- img -->
                     <div class="mr-4">
-                      <img src="./img/header/avatar-2.svg" alt="logo">
+                      <img src="./img/students/avatar-1.svg" alt="logo">
                     </div>
                     <!--main list 2 -->
                     <div class="grid grid-cols-1 w-full sm:grid-cols-2 gap-2 sm:gap-5  ">
@@ -246,10 +279,10 @@
                       </div>
                        <!-- main item 4 -->
                       <div>
-                        <p class="text-[10px] sm:text-sm  text-gray-900 mb-1 sm:mb-2">11:00 AM, April 2, 2023</p>
+                        <p class="text-[10px] sm:text-sm  text-gray-900 mb-1 sm:mb-2">11:00 AM, January 7, 2020</p>
                         <div class="flex items-center gap-2">
                           <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 18C14.9183 18 18.5 14.4183 18.5 10C18.5 5.58172 14.9183 2 10.5 2C6.08172 2 2.5 5.58172 2.5 10C2.5 14.4183 6.08172 18 10.5 18ZM14.2071 8.70711C14.5976 8.31658 14.5976 7.68342 14.2071 7.29289C13.8166 6.90237 13.1834 6.90237 12.7929 7.29289L9.5 10.5858L8.20711 9.29289C7.81658 8.90237 7.18342 8.90237 6.79289 9.29289C6.40237 9.68342 6.40237 10.3166 6.79289 10.7071L8.79289 12.7071C9.18342 13.0976 9.81658 13.0976 10.2071 12.7071L14.2071 8.70711Z" fill="#E07373"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 18C14.9183 18 18.5 14.4183 18.5 10C18.5 5.58172 14.9183 2 10.5 2C6.08172 2 2.5 5.58172 2.5 10C2.5 14.4183 6.08172 18 10.5 18ZM14.2071 8.70711C14.5976 8.31658 14.5976 7.68342 14.2071 7.29289C13.8166 6.90237 13.1834 6.90237 12.7929 7.29289L9.5 10.5858L8.20711 9.29289C7.81658 8.90237 7.18342 8.90237 6.79289 9.29289C6.40237 9.68342 6.40237 10.3166 6.79289 10.7071L8.79289 12.7071C9.18342 13.0976 9.81658 13.0976 10.2071 12.7071L14.2071 8.70711Z" fill="#34D399"/>
                            </svg>
                           <a href="#" class="text-[10px] sm:text-sm text-gray-500">Checked out</a>
                         </div>
@@ -262,10 +295,10 @@
                     </div>
                   </div>
                    <!-- main menu 2 -->
-                   <div class="flex sm:items-center border-b border-gray-200 pl-3 pr-4 sm:pr-8 md:pl-6 py-2 md:py-4  ">
+                   <div class="flex sm:items-center border-b border-gray-200 pl-3 pr-4 sm:pr-8 md:pl-6 py-2 md:py-4 ">
                     <!-- img -->
                     <div class="mr-4">
-                      <img src="./img/header/avatar-3.svg" alt="logo">
+                      <img src="./img/students/avatar-2.svg" alt="logo">
                     </div>
                     <!--main list 3 -->
                     <div class="grid grid-cols-1 w-full sm:grid-cols-2 gap-2 sm:gap-5  ">
@@ -282,7 +315,7 @@
                       </div>
                        <!-- main item 6 -->
                       <div>
-                        <p class="text-[10px] sm:text-sm  text-gray-900 mb-1 sm:mb-2">9:30 AM, April 2, 2023</p>
+                        <p class="text-[10px] sm:text-sm  text-gray-900 mb-1 sm:mb-2">9:30 AM, January 7, 2020</p>
                         <div class="flex items-center gap-2">
                           <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 18C14.9183 18 18.5 14.4183 18.5 10C18.5 5.58172 14.9183 2 10.5 2C6.08172 2 2.5 5.58172 2.5 10C2.5 14.4183 6.08172 18 10.5 18ZM14.2071 8.70711C14.5976 8.31658 14.5976 7.68342 14.2071 7.29289C13.8166 6.90237 13.1834 6.90237 12.7929 7.29289L9.5 10.5858L8.20711 9.29289C7.81658 8.90237 7.18342 8.90237 6.79289 9.29289C6.40237 9.68342 6.40237 10.3166 6.79289 10.7071L8.79289 12.7071C9.18342 13.0976 9.81658 13.0976 10.2071 12.7071L14.2071 8.70711Z" fill="#34D399"/>
@@ -297,17 +330,55 @@
                       </svg>
                     </div>
                   </div>
+                  <!-- main menu 3 -->
+                  <div class="flex sm:items-center pl-3 pr-4 sm:pr-8 md:pl-6 py-2 md:py-4  ">
+                    <!-- img -->
+                    <div class="mr-4">
+                      <img src="./img/students/avatar-1.svg" alt="logo">
+                    </div>
+                    <!--main list 2 -->
+                    <div class="grid grid-cols-1 w-full sm:grid-cols-2 gap-2 sm:gap-5  ">
+                      <!-- main item 3 -->
+                      <div>
+                        <p class="text-indigo-600 text-[10px] sm:text-sm font-medium mb-1 sm:mb-2">Kristen Ramos</p>
+                        <div class="flex items-center gap-2">
+                          <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.00300002 1.884L8 5.882L15.997 1.884C15.9674 1.37444 15.7441 0.895488 15.3728 0.545227C15.0016 0.194965 14.5104 -9.35847e-05 14 3.36834e-08H2C1.48958 -9.35847e-05 0.998447 0.194965 0.627178 0.545227C0.255908 0.895488 0.0326041 1.37444 0.00300002 1.884Z" fill="#9CA3AF"/>
+                            <path d="M16 4.118L8 8.118L0 4.118V10C0 10.5304 0.210714 11.0391 0.585786 11.4142C0.960859 11.7893 1.46957 12 2 12H14C14.5304 12 15.0391 11.7893 15.4142 11.4142C15.7893 11.0391 16 10.5304 16 10V4.118Z" fill="#9CA3AF"/>
+                          </svg>
+                          <a href="#" class="text-gray-500 text-[10px] sm:text-sm font-normal">kristen.ramos@example.com</a>
+                        </div>
+                      </div>
+                       <!-- main item 4 -->
+                      <div>
+                        <p class="text-[10px] sm:text-sm  text-gray-900 mb-1 sm:mb-2">11:00 AM, January 7, 2020</p>
+                        <div class="flex items-center gap-2">
+                          <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 18C14.9183 18 18.5 14.4183 18.5 10C18.5 5.58172 14.9183 2 10.5 2C6.08172 2 2.5 5.58172 2.5 10C2.5 14.4183 6.08172 18 10.5 18ZM14.2071 8.70711C14.5976 8.31658 14.5976 7.68342 14.2071 7.29289C13.8166 6.90237 13.1834 6.90237 12.7929 7.29289L9.5 10.5858L8.20711 9.29289C7.81658 8.90237 7.18342 8.90237 6.79289 9.29289C6.40237 9.68342 6.40237 10.3166 6.79289 10.7071L8.79289 12.7071C9.18342 13.0976 9.81658 13.0976 10.2071 12.7071L14.2071 8.70711Z" fill="#34D399"/>
+                           </svg>
+                          <a href="#" class="text-[10px] sm:text-sm text-gray-500">Checked out</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pt-8 sm:p-0">
+                      <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292894 9.70711C-0.0976307 9.31658 -0.0976307 8.68342 0.292894 8.29289L3.58579 5L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292894C0.683417 -0.0976312 1.31658 -0.0976312 1.70711 0.292894L5.70711 4.29289C6.09763 4.68342 6.09763 5.31658 5.70711 5.70711L1.70711 9.70711C1.31658 10.0976 0.683418 10.0976 0.292894 9.70711Z" fill="#9CA3AF"/>
+                      </svg>
+                    </div>
+                  </div>
             </div> 
             <!-- main students title  -->
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-5 mb-4">
               <h2 class="font-semibold text-gray-500 text-base sm:text-lg md:text-xl">Students</h2>
              <div class="flex items-center gap-3">
-                <button class="border border-gray-300 py-2 px-4 text-[10px] sm:text-sm rounded-md" >View all students</button>
-                <button class="flex items-center gap-2 bg-indigo-600 border border-gray-300 py-2 px-4 text-white text-[10px] sm:text-sm rounded-md" >
-                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7 0C7.55228 0 8 0.447715 8 1V6H13C13.5523 6 14 6.44772 14 7C14 7.55228 13.5523 8 13 8H8V13C8 13.5523 7.55228 14 7 14C6.44772 14 6 13.5523 6 13V8H1C0.447715 8 0 7.55228 0 7C0 6.44771 0.447715 6 1 6L6 6V1C6 0.447715 6.44772 0 7 0Z" fill="white"/>
-                  </svg>
-                 <span>Add student</span>
+                <button class="flex items-center gap-2 border border-gray-300 py-2 px-4 text-[10px] sm:text-sm rounded-md" >
+                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 3C8 4.65685 6.65685 6 5 6C3.34315 6 2 4.65685 2 3C2 1.34315 3.34315 0 5 0C6.65685 0 8 1.34315 8 3Z" fill="#6B7280"/>
+                        <path d="M16 3C16 4.65685 14.6569 6 13 6C11.3431 6 10 4.65685 10 3C10 1.34315 11.3431 0 13 0C14.6569 0 16 1.34315 16 3Z" fill="#6B7280"/>
+                        <path d="M11.9291 14C11.9758 13.6734 12 13.3395 12 13C12 11.3648 11.4393 9.86059 10.4998 8.66907C11.2352 8.24355 12.0892 8 13 8C15.7614 8 18 10.2386 18 13V14H11.9291Z" fill="#6B7280"/>
+                        <path d="M5 8C7.76142 8 10 10.2386 10 13V14H0V13C0 10.2386 2.23858 8 5 8Z" fill="#6B7280"/>
+                     </svg>
+                    <span>View all students</span>
                 </button>
              </div>
             </div>
@@ -333,10 +404,34 @@
                   </tr>
                 </thead>
                 <tbody>
+                  <tr class="border-b border-gray-200" >
+                        <td class="whitespace-nowrap px-6  py-4">
+                          <div class="flex items-center gap-4">
+                            <div class="w-10"><img class="w-full" src="./img/students/avatar-5.svg" alt="logo"></div>
+                            <div class="">
+                              <p class="font-bold text-sm text-gray-900">Jane Cooper</p>
+                              <a href="#" class="font-normal text-sm text-gray-400">jane.cooper@example.com</a>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="whitespace-nowrap px-6  py-4">
+                          <p class="font-normal text-sm text-gray-900">Regional Paradigm Technician</p>
+                          <p class="font-normal text-sm text-gray-400">Optimization</p>
+                        </td>
+                        <td class="whitespace-nowrap py-7 px-6">
+                          <p class="w-14 text-xs px-2.5 py-1 bg-green-100 rounded-2xl">Active</p>
+                        </td>
+                        <td class="whitespace-nowrap px-6  py-4 ">
+                          <p class="text-sm text-gray-500">Admin</p>
+                        </td>
+                        <td class="whitespace-nowrap py-7 pl-8 pr-6 text-end">
+                          <a href="#" class="text-indigo-600 text-sm">Edit</a>
+                        </td>
+                  </tr >
                   <tr class="border-b border-gray-200">
                     <td class="whitespace-nowrap px-6  py-4">
                       <div class="flex items-center gap-4">
-                        <div class="w-10"><img class="w-full" src="./img/header/avatar-3.svg" alt="logo"></div>
+                        <div class="w-10"><img class="w-full" src="./img/students/avatar-6.svg" alt="logo"></div>
                         <div class="">
                           <p class="font-bold text-sm text-gray-900">Cody Fisher</p>
                           <a href="#" class="font-normal text-sm text-gray-400">cody.fisher@example.com</a>
@@ -344,47 +439,23 @@
                       </div>
                     </td>
                     <td class="whitespace-nowrap px-6  py-4">
-                      <p class="font-normal text-sm text-gray-900">Mary Cooper</p>
-                      <p class="font-normal text-sm text-gray-400">Mother</p>
+                      <p class="font-normal text-sm text-gray-900">Product Directives Officer</p>
+                      <p class="font-normal text-sm text-gray-400">Intranet</p>
                     </td>
                     <td class="whitespace-nowrap py-7 px-6">
                       <p class="w-14 text-xs px-2.5 py-1 bg-green-100 rounded-2xl">Active</p>
                     </td>
                     <td class="whitespace-nowrap px-6  py-4 ">
-                      <p class="text-sm text-gray-500">Student</p>
+                      <p class="text-sm text-gray-500">Owner</p>
                     </td>
                     <td class="whitespace-nowrap py-7 pl-8 pr-6 text-end">
                       <a href="#" class="text-indigo-600 text-sm">Edit</a>
                     </td>
                   </tr>
-                  <tr class="border-b border-gray-200" >
-                    <td class="whitespace-nowrap px-6  py-4">
-                      <div class="flex items-center gap-4">
-                        <div class="w-10"><img class="w-full" src="./img/header/avatar-1.svg" alt="logo"></div>
-                        <div class="">
-                          <p class="font-bold text-sm text-gray-900">Jane Cooper</p>
-                          <a href="#" class="font-normal text-sm text-gray-400">jane.cooper@example.com</a>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="whitespace-nowrap px-6  py-4">
-                      <p class="font-normal text-sm text-gray-900">Dody Fisher</p>
-                      <p class="font-normal text-sm text-gray-400">Mother</p>
-                    </td>
-                    <td class="whitespace-nowrap py-7 px-6">
-                      <p class="w-14 text-xs px-2.5 py-1 bg-green-100 rounded-2xl">Active</p>
-                    </td>
-                    <td class="whitespace-nowrap px-6  py-4 ">
-                      <p class="text-sm text-gray-500">Student</p>
-                    </td>
-                    <td class="whitespace-nowrap py-7 pl-8 pr-6 text-end">
-                      <a href="#" class="text-indigo-600 text-sm">Edit</a>
-                    </td>
-                  </tr >
                   <tr class="border-b border-gray-200">
                     <td class="whitespace-nowrap px-6  py-4">
                       <div class="flex items-center gap-4">
-                        <div class="w-10"><img class="w-full" src="./img/header/avatar-2.svg" alt="logo"></div>
+                        <div class="w-10"><img class="w-full" src="./img/students/avatar-7.svg" alt="logo"></div>
                         <div class="">
                           <p class="font-bold text-sm text-gray-900">Esther Howard</p>
                           <a href="#" class="font-normal text-sm text-gray-400"> esther.howard@example.com</a>
@@ -392,8 +463,8 @@
                       </div>
                     </td>
                     <td class="whitespace-nowrap px-6  py-4">
-                      <p class="font-normal text-sm text-gray-900">Arthur Howard</p>
-                      <p class="font-normal text-sm text-gray-400">Father</p>
+                      <p class="font-normal text-sm text-gray-900">Forward Response Developer</p>
+                      <p class="font-normal text-sm text-gray-400">Directives   r</p>
                     </td>
                     <td class="whitespace-nowrap py-7 px-6">
                       <p class="w-14 text-xs px-2.5 py-1 bg-green-100 rounded-2xl">Active</p>
@@ -408,41 +479,17 @@
                   <tr class="border-b border-gray-200">
                     <td class="whitespace-nowrap px-6  py-4">
                       <div class="flex items-center gap-4">
-                        <div class="w-10"><img class="w-full" src="./img/header/avatar-6.svg" alt="logo"></div>
+                        <div class="w-10"><img class="w-full" src="./img/students/avatar-8.svg" alt="logo"></div>
                         <div class="">
-                          <p class="font-bold text-sm text-gray-900">Abdi Mohamud</p>
+                          <p class="font-bold text-sm text-gray-900">Jenny Wilson</p>
                           
-                          <a href="#" class="font-normal text-sm text-gray-400">abdi.m@example.com</a>
+                          <a href="#" class="font-normal text-sm text-gray-400">jenny.wilson@example.com</a>
                         </div>
                       </div>
                     </td>
                     <td class="whitespace-nowrap px-6  py-4">
-                      <p class="font-normal text-sm text-gray-900">Mohamed Mohamud</p>
-                      <p class="font-normal text-sm text-gray-400">Father</p>
-                    </td>
-                    <td class="whitespace-nowrap py-7 px-6">
-                      <p class="w-14 text-xs px-2.5 py-1 bg-green-100 rounded-2xl">Active</p>
-                    </td>
-                    <td class="whitespace-nowrap px-6  py-4 ">
-                      <p class="text-sm text-gray-500">Student</p>
-                    </td>
-                    <td class="whitespace-nowrap py-7 pl-8 pr-6 text-end">
-                      <a href="#" class="text-indigo-600 text-sm">Edit</a>
-                    </td>
-                  </tr>
-                  <tr class="border-b border-gray-200">
-                    <td class="whitespace-nowrap px-6  py-4">
-                      <div class="flex items-center gap-4">
-                        <div class="w-10"><img class="w-full" src="./img/header/avatar-4.svg" alt="logo"></div>
-                        <div class="">
-                          <p class="font-bold text-sm text-gray-900">Kristin Watson</p>
-                          <a href="#" class="font-normal text-sm text-gray-400">kristin.watson@example.com</a>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="whitespace-nowrap px-6  py-4">
-                      <p class="font-normal text-sm text-gray-900">Abby Watson</p>
-                      <p class="font-normal text-sm text-gray-400">Mother</p>
+                      <p class="font-normal text-sm text-gray-900">Central Security Manager</p>
+                      <p class="font-normal text-sm text-gray-400">Program</p>
                     </td>
                     <td class="whitespace-nowrap py-7 px-6">
                       <p class="w-14 text-xs px-2.5 py-1 bg-green-100 rounded-2xl">Active</p>
@@ -457,7 +504,31 @@
                   <tr class="border-b border-gray-200">
                     <td class="whitespace-nowrap px-6  py-4">
                       <div class="flex items-center gap-4">
-                        <div class="w-10"><img class="w-full" src="./img/header/avatar-5.svg" alt="logo"></div>
+                        <div class="w-10"><img class="w-full" src="./img/students/avatar-9.svg" alt="logo"></div>
+                        <div class="">
+                          <p class="font-bold text-sm text-gray-900">Kristin Watson</p>
+                          <a href="#" class="font-normal text-sm text-gray-400">kristin.watson@example.com</a>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="whitespace-nowrap px-6  py-4">
+                      <p class="font-normal text-sm text-gray-900">Lead Implementation Liaison</p>
+                      <p class="font-normal text-sm text-gray-400">Mobility</p>
+                    </td>
+                    <td class="whitespace-nowrap py-7 px-6">
+                      <p class="w-14 text-xs px-2.5 py-1 bg-green-100 rounded-2xl">Active</p>
+                    </td>
+                    <td class="whitespace-nowrap px-6  py-4 ">
+                      <p class="text-sm text-gray-500">Admin</p>
+                    </td>
+                    <td class="whitespace-nowrap py-7 pl-8 pr-6 text-end">
+                      <a href="#" class="text-indigo-600 text-sm">Edit</a>
+                    </td>
+                  </tr>
+                  <tr class="border-b border-gray-200">
+                    <td class="whitespace-nowrap px-6  py-4">
+                      <div class="flex items-center gap-4">
+                        <div class="w-10"><img class="w-full" src="./img/students/avatar-10.svg" alt="logo"></div>
                         <div class="">
                           <p class="font-bold text-sm text-gray-900">Cameron Williamson</p>
                           <a href="#" class="font-normal text-sm text-gray-400">cameron.williamson@example.com</a>
@@ -465,14 +536,14 @@
                       </div>
                     </td>
                     <td class="whitespace-nowrap px-6  py-4">
-                      <p class="font-normal text-sm text-gray-900">Jack Will</p>
-                      <p class="font-normal text-sm text-gray-400">Father</p>
+                      <p class="font-normal text-sm text-gray-900">Internal Applications Engineer</p>
+                      <p class="font-normal text-sm text-gray-400">Security</p>
                     </td>
                     <td class="whitespace-nowrap py-7 px-6">
                       <p class="w-14 text-xs px-2.5 py-1 bg-green-100 rounded-2xl">Active</p>
                     </td>
                     <td class="whitespace-nowrap px-6  py-4 ">
-                      <p class="text-sm text-gray-500">Student</p>
+                      <p class="text-sm text-gray-500">Member</p>
                     </td>
                     <td class="whitespace-nowrap py-7 pl-8 pr-6 text-end">
                       <a href="#" class="text-indigo-600 text-sm">Edit</a>
