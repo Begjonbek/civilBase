@@ -16,7 +16,7 @@
     <!-- title -->
     <title>CivilBase</title>
   </head>
-  <body>
+  <body class="font-inter">
     <!-- saidbar -->
     <div class="max-w-xll flex mx-auto">
       <!-- simple -->
@@ -88,32 +88,193 @@
       <div class="w-full lg:w-[80%]">
         <!-- header -->
         <header
-          class="w-full flex items-center justify-between p-4 border shadow-md"
+          class="w-full flex items-center gap-4 justify-between p-4 border shadow-md"
         >
-          <form class="max-w-4xl flex gap-4 items-center">
+          <div class="w-[880px] flex gap-4 items-center">
             <div><img src="./img/header/Search.svg" alt="logo" /></div>
             <input
-              class="border pl-2 w-3/4 h-8 outline-none"
+              class=" pl-2 w-full h-8 outline-none"
               type="search"
               placeholder="Search"
             />
-          </form>
+          </div>
           <div class="flex items-center gap-5">
-            <div class=""><img src="./img/header/icon-1.svg" alt="logo" /></div>
-            <div class=""><img src="./img/header/Avatar.svg" alt="logo" /></div>
+            <div class="w-5 h-5"><img src="./img/header/icon-1.svg" alt="logo" /></div>
+            <div class="w-7 h-7"><img src="./img/header/Avatar.svg" alt="logo" /></div>
           </div>
         </header>
         <!-- main -->
-        <section class="main ">
-            <div class="max-w-mxl mx-auto">
-                <div class="">
-                    <div class=""></div>
-                </div>
-                <div class=""></div>
+        <section class="main pl-8 pt-8 pr-5">
+            <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-9">Minnesota Daycare</h2>
+            <h3 class="font-semibold text-gray-500 text-base sm:text-lg md:text-xl mb-5">Recent Activity</h3>
+            <!-- main cart -->
+            <div class="max-w-mx border-l border-r border-b rounded-b-lg border-gray-200  border-collapse mb-8">
+                <!-- main menu  -->
+                
+                  <div class="flex items-start sm:items-center border-b border-gray-200 px-3 md:px-6 py-2 md:py-4 ">
+                    <!-- img -->
+                    <div class="mr-4">
+                      <img src="./img/header/avatar-1.svg" alt="logo">
+                    </div>
+                    <!--main list -->
+                    <div class="grid grid-cols-1 w-60 sm:grid-cols-2 gap-2 sm:gap-5 sm:w-full ">
+                        <!-- main item 1 -->
+                      <div>
+                        <p class="text-indigo-600 text-[10px] sm:text-sm font-medium mb-1 sm:mb-2">Jane Cooper</p>
+                        <div class="flex items-center gap-2">
+                          <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.00300002 1.884L8 5.882L15.997 1.884C15.9674 1.37444 15.7441 0.895488 15.3728 0.545227C15.0016 0.194965 14.5104 -9.35847e-05 14 3.36834e-08H2C1.48958 -9.35847e-05 0.998447 0.194965 0.627178 0.545227C0.255908 0.895488 0.0326041 1.37444 0.00300002 1.884Z" fill="#9CA3AF"/>
+                            <path d="M16 4.118L8 8.118L0 4.118V10C0 10.5304 0.210714 11.0391 0.585786 11.4142C0.960859 11.7893 1.46957 12 2 12H14C14.5304 12 15.0391 11.7893 15.4142 11.4142C15.7893 11.0391 16 10.5304 16 10V4.118Z" fill="#9CA3AF"/>
+                          </svg>
+                          <a href="#" class="text-gray-500 text-[10px] sm:text-sm font-normal">jane.cooper@example.com</a>
+                        </div>
+                      </div>
+                      <!-- main item 2 -->
+                      <div>
+                        <p class="text-[10px] sm:text-sm  text-gray-900 mb-1 sm:mb-2">9:30 AM, April 2, 2023</p>
+                        <div class="flex items-center gap-2">
+                          <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 18C14.9183 18 18.5 14.4183 18.5 10C18.5 5.58172 14.9183 2 10.5 2C6.08172 2 2.5 5.58172 2.5 10C2.5 14.4183 6.08172 18 10.5 18ZM14.2071 8.70711C14.5976 8.31658 14.5976 7.68342 14.2071 7.29289C13.8166 6.90237 13.1834 6.90237 12.7929 7.29289L9.5 10.5858L8.20711 9.29289C7.81658 8.90237 7.18342 8.90237 6.79289 9.29289C6.40237 9.68342 6.40237 10.3166 6.79289 10.7071L8.79289 12.7071C9.18342 13.0976 9.81658 13.0976 10.2071 12.7071L14.2071 8.70711Z" fill="#34D399"/>
+                           </svg>
+                          <a href="#" class="text-[10px] sm:text-sm text-gray-500">Checked in</a>
+                        </div>
+                      </div>
+                    </div>
+                    <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292894 9.70711C-0.0976307 9.31658 -0.0976307 8.68342 0.292894 8.29289L3.58579 5L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292894C0.683417 -0.0976312 1.31658 -0.0976312 1.70711 0.292894L5.70711 4.29289C6.09763 4.68342 6.09763 5.31658 5.70711 5.70711L1.70711 9.70711C1.31658 10.0976 0.683418 10.0976 0.292894 9.70711Z" fill="#9CA3AF"/>
+                    </svg>
+                  </div>
+                  <!-- main menu 1 -->
+                  <div class="flex sm:items-center border-b border-gray-200 px-3 md:px-6 py-2 md:py-4  ">
+                    <!-- img -->
+                    <div class="mr-4">
+                      <img src="./img/header/avatar-2.svg" alt="logo">
+                    </div>
+                    <!--main list 2 -->
+                    <div class="grid grid-cols-1 w-60 sm:grid-cols-2 gap-2 sm:gap-5 sm:w-full ">
+                      <!-- main item 3 -->
+                      <div>
+                        <p class="text-indigo-600 text-[10px] sm:text-sm font-medium mb-1 sm:mb-2">Kristen Ramos</p>
+                        <div class="flex items-center gap-2">
+                          <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.00300002 1.884L8 5.882L15.997 1.884C15.9674 1.37444 15.7441 0.895488 15.3728 0.545227C15.0016 0.194965 14.5104 -9.35847e-05 14 3.36834e-08H2C1.48958 -9.35847e-05 0.998447 0.194965 0.627178 0.545227C0.255908 0.895488 0.0326041 1.37444 0.00300002 1.884Z" fill="#9CA3AF"/>
+                            <path d="M16 4.118L8 8.118L0 4.118V10C0 10.5304 0.210714 11.0391 0.585786 11.4142C0.960859 11.7893 1.46957 12 2 12H14C14.5304 12 15.0391 11.7893 15.4142 11.4142C15.7893 11.0391 16 10.5304 16 10V4.118Z" fill="#9CA3AF"/>
+                          </svg>
+                          <a href="#" class="text-gray-500 text-[10px] sm:text-sm font-normal">kristen.ramos@example.com</a>
+                        </div>
+                      </div>
+                       <!-- main item 4 -->
+                      <div>
+                        <p class="text-[10px] sm:text-sm  text-gray-900 mb-1 sm:mb-2">11:00 AM, April 2, 2023</p>
+                        <div class="flex items-center gap-2">
+                          <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 18C14.9183 18 18.5 14.4183 18.5 10C18.5 5.58172 14.9183 2 10.5 2C6.08172 2 2.5 5.58172 2.5 10C2.5 14.4183 6.08172 18 10.5 18ZM14.2071 8.70711C14.5976 8.31658 14.5976 7.68342 14.2071 7.29289C13.8166 6.90237 13.1834 6.90237 12.7929 7.29289L9.5 10.5858L8.20711 9.29289C7.81658 8.90237 7.18342 8.90237 6.79289 9.29289C6.40237 9.68342 6.40237 10.3166 6.79289 10.7071L8.79289 12.7071C9.18342 13.0976 9.81658 13.0976 10.2071 12.7071L14.2071 8.70711Z" fill="#E07373"/>
+                           </svg>
+                          <a href="#" class="text-[10px] sm:text-sm text-gray-500">Checked out</a>
+                        </div>
+                      </div>
+                    </div>
+                    <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292894 9.70711C-0.0976307 9.31658 -0.0976307 8.68342 0.292894 8.29289L3.58579 5L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292894C0.683417 -0.0976312 1.31658 -0.0976312 1.70711 0.292894L5.70711 4.29289C6.09763 4.68342 6.09763 5.31658 5.70711 5.70711L1.70711 9.70711C1.31658 10.0976 0.683418 10.0976 0.292894 9.70711Z" fill="#9CA3AF"/>
+                    </svg>
+                  </div>
+                   <!-- main menu 2 -->
+                   <div class="flex sm:items-center border-b border-gray-200 px-3 md:px-6 py-2 md:py-4  ">
+                    <!-- img -->
+                    <div class="mr-4">
+                      <img src="./img/header/avatar-3.svg" alt="logo">
+                    </div>
+                    <!--main list 3 -->
+                    <div class="grid grid-cols-1 w-60 sm:grid-cols-2 gap-2 sm:gap-5 sm:w-full ">
+                      <!-- main item 5 -->
+                      <div>
+                        <p class="text-indigo-600 text-[10px] sm:text-sm font-medium mb-1 sm:mb-2">Ted Fox</p>
+                        <div class="flex items-center gap-2">
+                          <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.00300002 1.884L8 5.882L15.997 1.884C15.9674 1.37444 15.7441 0.895488 15.3728 0.545227C15.0016 0.194965 14.5104 -9.35847e-05 14 3.36834e-08H2C1.48958 -9.35847e-05 0.998447 0.194965 0.627178 0.545227C0.255908 0.895488 0.0326041 1.37444 0.00300002 1.884Z" fill="#9CA3AF"/>
+                            <path d="M16 4.118L8 8.118L0 4.118V10C0 10.5304 0.210714 11.0391 0.585786 11.4142C0.960859 11.7893 1.46957 12 2 12H14C14.5304 12 15.0391 11.7893 15.4142 11.4142C15.7893 11.0391 16 10.5304 16 10V4.118Z" fill="#9CA3AF"/>
+                          </svg>
+                          <a href="#" class="text-gray-500 text-[10px] sm:text-sm font-normal">ted.fox@example.com</a>
+                        </div>
+                      </div>
+                       <!-- main item 6 -->
+                      <div>
+                        <p class="text-[10px] sm:text-sm  text-gray-900 mb-1 sm:mb-2">9:30 AM, April 2, 2023</p>
+                        <div class="flex items-center gap-2">
+                          <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 18C14.9183 18 18.5 14.4183 18.5 10C18.5 5.58172 14.9183 2 10.5 2C6.08172 2 2.5 5.58172 2.5 10C2.5 14.4183 6.08172 18 10.5 18ZM14.2071 8.70711C14.5976 8.31658 14.5976 7.68342 14.2071 7.29289C13.8166 6.90237 13.1834 6.90237 12.7929 7.29289L9.5 10.5858L8.20711 9.29289C7.81658 8.90237 7.18342 8.90237 6.79289 9.29289C6.40237 9.68342 6.40237 10.3166 6.79289 10.7071L8.79289 12.7071C9.18342 13.0976 9.81658 13.0976 10.2071 12.7071L14.2071 8.70711Z" fill="#E07373"/>
+                           </svg>
+                          <a href="#" class="text-[10px] sm:text-sm text-gray-500">Checked in</a>
+                        </div>
+                      </div>
+                    </div>
+                    <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292894 9.70711C-0.0976307 9.31658 -0.0976307 8.68342 0.292894 8.29289L3.58579 5L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292894C0.683417 -0.0976312 1.31658 -0.0976312 1.70711 0.292894L5.70711 4.29289C6.09763 4.68342 6.09763 5.31658 5.70711 5.70711L1.70711 9.70711C1.31658 10.0976 0.683418 10.0976 0.292894 9.70711Z" fill="#9CA3AF"/>
+                    </svg>
+                  </div>
+            </div> 
+            <!-- main students title  -->
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-5 mb-4">
+              <h2 class="font-semibold text-gray-500 text-base sm:text-lg md:text-xl">Students</h2>
+             <div class="flex items-center gap-3">
+                <button class="border border-gray-300 py-2 px-4 text-[10px] sm:text-sm rounded-md" >View all students</button>
+                <button class="flex items-center gap-2 bg-indigo-600 border border-gray-300 py-2 px-4 text-white text-[10px] sm:text-sm rounded-md" >
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7 0C7.55228 0 8 0.447715 8 1V6H13C13.5523 6 14 6.44772 14 7C14 7.55228 13.5523 8 13 8H8V13C8 13.5523 7.55228 14 7 14C6.44772 14 6 13.5523 6 13V8H1C0.447715 8 0 7.55228 0 7C0 6.44771 0.447715 6 1 6L6 6V1C6 0.447715 6.44772 0 7 0Z" fill="white"/>
+                  </svg>
+                 <span>Add student</span>
+                </button>
+             </div>
             </div>
+            <table class="w-full border border-gray-200 border-collapse  rounded-xl"> 
+              <thead class="bg-gray-100">
+                <tr class="border-b border-gray-200">
+                  <th class="py-3 px-6 text-xs text-gray-400 font-medium">
+                    NAME
+                  </th>
+                  <th class="py-3 px-6 text-xs text-gray-400 font-medium">
+                    PARENT
+                  </th>
+                  <th class="py-3 px-6 text-xs text-gray-400 font-medium">
+                    STATUS
+                  </th>
+                  <th class="py-3 px-6 text-xs text-gray-400 font-medium">
+                    ROLE
+                  </th>
+                  
+                  <th class="py-3 pl-6 text-xs text-gray-400 font-medium">
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr >
+                  <td class="px-6  py-4">
+                    <div class="flex items-center gap-4">
+                      <div class=""><img src="./img/header/avatar-3.svg" alt="logo"></div>
+                      <div class="">
+                        <p class="font-bold text-sm text-gray-900">Cody Fisher</p>
+                        <a href="#" class="font-normal text-sm text-gray-400">cody.fisher@example.com</a>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="px-6  py-4">
+                    <p class="font-normal text-sm text-gray-900">Mary Cooper</p>
+                    <p class="font-normal text-sm text-gray-400">Mother</p>
+                  </td>
+                  <td class=" py-7 px-6">
+                    <p class="w-14 text-xs px-2.5 py-1 bg-green-100 rounded-2xl">Active</p>
+                  </td>
+                  <td class=" ">
+                    <p>Student</p>
+                  </td>
+                  <td class="py-7 pl-8 pr-6 text-end">
+                    <a href="#" class="text-indigo-600 text-sm">Edit</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
         </section>
       </div>
-
     </div>
 
     <script src="./app.js"></script>

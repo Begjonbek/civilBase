@@ -3,6 +3,9 @@ module.exports = {
   content: ["./public/**/*.{html,js}"],
   theme: {
     extend: {
+      fontFamily :{
+        inter: ['Inter', 'sans-serif' ]
+      },
       maxWidth: {
         xll: '1480px',
         mxs: '256px',
