@@ -315,5 +315,14 @@ new Chart(ctx, {
       },
     ],
   },
+  options: {
+    plugins: {
+      legend: {
+        display: true,
+        position: 'top',
+        align: 'center',
+      }
+    }
+  }
 
 });

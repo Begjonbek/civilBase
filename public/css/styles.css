@@ -509,8 +509,8 @@ video {
 .top-\[70px\] {
   top: 70px;
 }
-.-z-10 {
-  z-index: -10;
+.z-0 {
+  z-index: 0;
 }
 .z-10 {
   z-index: 10;
@@ -520,12 +520,6 @@ video {
 }
 .z-50 {
   z-index: 50;
-}
-.z-\[2000\] {
-  z-index: 2000;
-}
-.z-0 {
-  z-index: 0;
 }
 .mx-auto {
   margin-left: auto;
@@ -955,6 +949,9 @@ video {
 .pt-8 {
   padding-top: 2rem;
 }
+.pb-4 {
+  padding-bottom: 1rem;
+}
 .text-center {
   text-align: center;
 }
@@ -1138,15 +1135,15 @@ th{
   
   /* Track */
   .overflow-x-scroll::-webkit-scrollbar-track {
-    background-color: rgb(70, 179, 247);
+    background-color: rgb(242, 244, 246);
   }
   
    /* Handle */
   .overflow-x-scroll::-webkit-scrollbar-thumb {
-    background: rgb(31, 12, 202);
-    --tw-gradient-from: rgb(31, 12, 202);
+    background: rgb(115, 114, 120);
+    --tw-gradient-from: rgb(115, 114, 120);
     --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to,rgba(133, 198, 236    ,0));
-    --tw-gradient-to: rgb(31, 12, 202);
+    --tw-gradient-to: rgb(115, 114, 120);
     background-image: linear-gradient(to bottom,var(--tw-gradient-stops));
     height: 4px;
     border-radius: 20px;
@@ -1177,8 +1174,8 @@ th{
 
 }
 #myChart {
-  width: 197px !important;
-  height: 197px !important;
+  width: 200px !important;
+  height: 200px !important;
   
 }
 .focus\:outline-none:focus {
