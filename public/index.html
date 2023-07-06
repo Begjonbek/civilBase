@@ -40,7 +40,7 @@
             <div>
               <img class="w-full" src="./img/simple/Home1.svg" alt="logo" />
             </div>
-            <a href="./index.html" id="text" class="hidden md:flex">Home</a>
+            <a href="./index.html" id="text" class="w-full">Home</a>
           </div>
           <!-- item 2 -->
           <div id="item2" class="flex gap-3 p-2.5">
@@ -49,7 +49,7 @@
               <img class="w-full" src="./img/simple/Users.svg" alt="logo" />
             </div>
             <div class="flex w-full items-center justify-between">
-              <a href="./students.html" id="text2" class="">Students</a>
+              <a href="./students.html" id="text2" class="w-full">Students</a>
               <div class="w-8 text-center rounded-xl bg-gray-200">3</div>
             </div>
           </div>
@@ -60,7 +60,7 @@
               <img src="./img/simple/antenaa.svg" alt="logo" />
             </div>
             <div class="flex w-full items-center justify-between">
-              <a href="./billing.html" id="text3" class="">Billing</a>
+              <a href="./billing.html" id="text3" class="w-full">Billing</a>
               <div class="w-8 text-center rounded-xl bg-gray-200">4</div>
             </div>
           </div>
@@ -70,7 +70,7 @@
             <div>
               <img class="w-full" src="./img/simple/Calendar1.svg" alt="logo" />
             </div>
-            <a href="#" id="text4" class="hidden md:flex">Calendar</a>
+            <a href="./calendar.html" id="text4" class="w-full">Calendar</a>
           </div>
           <!-- item 5 -->
           <div id="item5" class="flex gap-3 p-2.5">
@@ -79,7 +79,7 @@
               <img class="w-full" src="./img/simple/Inbox.svg" alt="logo" />
             </div>
             <div class="flex w-full items-center justify-between">
-              <a href="#" id="text5" class="">Documents</a>
+              <a href="./document.html" id="text5" class="w-full">Documents</a>
               <div class="w-8 text-center rounded-xl bg-gray-200">12</div>
             </div>
           </div>
@@ -103,7 +103,7 @@
             <div>
               <img class="w-full" src="./img/simple/Home1.svg" alt="logo" />
             </div>
-            <a href="./index.html" id="texts" class="flex">Home</a>
+            <a href="./index.html" id="texts" class="w-full">Home</a>
           </div>
           <!-- item 2 -->
           <div id="items2" class="flex gap-3 p-2.5">
@@ -112,7 +112,7 @@
               <img class="w-full" src="./img/simple/Users.svg" alt="logo" />
             </div>
             <div class="flex w-full items-center justify-between">
-              <a href="./students.html" id="texts2" class="">Students</a>
+              <a href="./students.html" id="texts2" class="w-full">Students</a>
               <div class="w-8 text-center rounded-xl bg-gray-200">3</div>
             </div>
           </div>
@@ -123,7 +123,7 @@
               <img src="./img/simple/antenaa.svg" alt="logo" />
             </div>
             <div class="flex w-full items-center justify-between">
-              <a href="./billing.html" id="texts3" class="">Billing</a>
+              <a href="./billing.html" id="texts3" class="w-full">Billing</a>
               <div class="w-8 text-center rounded-xl bg-gray-200">4</div>
             </div>
           </div>
@@ -133,7 +133,7 @@
             <div>
               <img class="w-full" src="./img/simple/Calendar1.svg" alt="logo" />
             </div>
-            <a href="#" id="texts4" class="">Calendar</a>
+            <a href="./calendar.html" id="texts4" class="w-full">Calendar</a>
           </div>
           <!-- item 5 -->
           <div id="items5" class="flex gap-3 p-2.5">
@@ -142,7 +142,7 @@
               <img class="w-full" src="./img/simple/Inbox.svg" alt="logo" />
             </div>
             <div class="flex w-full items-center justify-between">
-              <a href="#" id="texts5" class="">Documents</a>
+              <a href="./document.html" id="texts5" class="w-full">Documents</a>
               <div class="w-8 text-center rounded-xl bg-gray-200">12</div>
             </div>
           </div>
@@ -177,12 +177,47 @@
               />
             </div>
             <div class="flex items-center gap-5">
-              <div class="w-5 h-5"><img src="./img/header/icon-1.svg" alt="logo" /></div>
+              <div  class="w-5 h-5 relative">
+                <button id="btn-js-down" class="">
+                  <img src="./img/header/icon-1.svg" alt="logo" />
+                </button>
+                
+              </div>
               <div class="w-7 h-7"><img src="./img/header/Avatar.svg" alt="logo" /></div>
             </div>
           </div>
         </header>
-        <!-- main -->
+      <!-- madol -->
+        <div class="hidden main-js-down w-full h-full  z-10 absolute top-[70px] left-0 bottom-0 right-0">
+          <div class="flex absolute right-5 top-0 z-50 sm:w-96 gap-3 py-4 px-5 items-start shadow-md bg-white rounded-lg">
+            <div class="flex gap-2">
+              <div class="">
+                <img src="./img/students/avatar-5.svg" alt="logo">
+              </div>
+              <div class="w-36 sm:w-72">
+                <h3 class="text-[12px] sm:text-sm text-gray-900 font-semibold">Emilia Gates</h3>
+                <p class=" text-[10px] sm:text-sm text-gray-500 mb-3">
+                  Hasn’t checked in yet. 
+                  Expected check-in time: 10am
+                </p> 
+                <div class="flex gap-3">
+                  <button class="text-[7px] sm:text-sm tex text-white bg-indigo-600 rounded-lg py-2 px-3 " type="checkbox" >
+                    Contact Parent
+                  </button>
+                  <button id="btn2" class="text-[7px]  sm:text-sm text-gray-900 border border-gray-500 rounded-lg  py-2 px-4">
+                    Ignore
+                  </button>
+                </div>
+              </div>
+             </div>
+              <button id="btn3" class="">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L6 4.58579L10.2929 0.292893C10.6834 -0.0976311 11.3166 -0.0976311 11.7071 0.292893C12.0976 0.683417 12.0976 1.31658 11.7071 1.70711L7.41421 6L11.7071 10.2929C12.0976 10.6834 12.0976 11.3166 11.7071 11.7071C11.3166 12.0976 10.6834 12.0976 10.2929 11.7071L6 7.41421L1.70711 11.7071C1.31658 12.0976 0.683417 12.0976 0.292893 11.7071C-0.0976311 11.3166 -0.0976311 10.6834 0.292893 10.2929L4.58579 6L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z" fill="#111827"/>
+                </svg>
+              </button>
+          </div>
+         </div>
+         <!-- main -->
         <section class="main pl-8 pt-8 pr-5">
             <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-9">Minnesota Daycare</h2>
             <h3 class="font-semibold text-gray-500 text-base sm:text-lg md:text-xl mb-5">Recent Activity</h3>
@@ -313,7 +348,7 @@
             </div>
             <div class="overflow-x-scroll mb-8">
               <table class="w-full border border-gray-200 border-collapse  rounded-xl"> 
-                <thead class="bg-gray-100">
+                <thead class="bg-gray-100  rounded-xl">
                   <tr class="border-b border-gray-200">
                     <th class="whitespace-nowrap py-3 px-6 text-xs text-gray-400 font-medium">
                       NAME

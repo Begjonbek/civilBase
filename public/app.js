@@ -256,3 +256,29 @@ ages5.addEventListener('click', function() {
     ages.style.borderRadius = '8px'
     texts.style.color = '#4B5563'
 })
+
+
+let btn1 = document.querySelector("#btn-js-down")
+let main1 = document.querySelector(".main-js-down")
+let box2 = document.querySelector('#btn2')
+let box3 = document.querySelector('#btn3')
+
+let over = document.querySelector('.fixed')
+
+let bulur = document.querySelector('.bulur')
+
+btn1.addEventListener('click', () => {
+    main1.classList.remove('hidden')
+    main1.classList.add('overl')
+    document.body.classList.add('overlBody')
+})
+box2.addEventListener('click', () => {
+    main1.classList.add('hidden')
+    document.body.classList.remove('overlBody')
+})
+box3.addEventListener('click', () => {
+    main1.classList.add('hidden')
+    document.body.classList.remove('overlBody')
+})
+
+

@@ -56,22 +56,23 @@ th{
 /* width */
 .overflow-x-scroll::-webkit-scrollbar {
     height: 10px;
-    width: 100%;
+    width: 20px;
   }
   
   /* Track */
   .overflow-x-scroll::-webkit-scrollbar-track {
-    background-color: #8bcaef;
+    background-color: rgb(70, 179, 247);
   }
   
    /* Handle */
   .overflow-x-scroll::-webkit-scrollbar-thumb {
-    background: rgb(133, 198, 236);
-    --tw-gradient-from: #7ddae6;
+    background: rgb(31, 12, 202);
+    --tw-gradient-from: rgb(31, 12, 202);
     --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to,rgba(133, 198, 236    ,0));
-    --tw-gradient-to: #78dce6;
+    --tw-gradient-to: rgb(31, 12, 202);
     background-image: linear-gradient(to bottom,var(--tw-gradient-stops));
     height: 4px;
+    border-radius: 20px;
   }
   
   /* Handle on hover */
@@ -81,3 +82,14 @@ th{
   }
 
 
+  .overl {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.083);
+}
+
+.overlBody{
+  overflow: hidden;
+
+}

@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="../src/styles.css">
+    <!-- title -->
+    <title>Document</title>
+  </head>
+  <body class="font-inter " >
+    <!-- saidbar -->
+    <div class="max-w-xll flex mx-auto relative" >
+      <!-- simple -->
+      <!-- desktop menu -->
+      <div 
+        class="w-[20%] hidden lg:flex flex-col min-h-screen border border-gray-200  bg-white"
+      >
+        <!-- title logo -->
+        <div class="max-w-mxs flex items-center gap-2 py-5 px-3">
+          <img src="./img/simple/Mark.svg" alt="logo" />
+          <h1 class="font-semibold hidden md:block lg:text-xl xl:text-2xl">
+            Civil<span class="font-bold">Base</span>
+          </h1>
+        </div>
+        <!-- menu -->
+        <div class="flex flex-col text-sm text-gray-600 px-2.5">
+          <!-- item 1 -->
+          <div id="item" class="flex gap-3 p-2.5">
+            <!-- item logo-->
+            <div>
+              <img class="w-full" src="./img/simple/Home1.svg" alt="logo" />
+            </div>
+            <a href="./index.html" id="text" class="w-full">Home</a>
+          </div>
+          <!-- item 2 -->
+          <div id="item2" class="flex gap-3 p-2.5">
+            <!-- item logo-->
+            <div class="w-6">
+              <img class="w-full" src="./img/simple/Users.svg" alt="logo" />
+            </div>
+            <div class="flex w-full items-center justify-between">
+              <a href="./students.html" id="text2" class="w-full">Students</a>
+              <div class="w-8 text-center rounded-xl bg-gray-200">3</div>
+            </div>
+          </div>
+          <!-- item 3 -->
+          <div id="item3" class="flex gap-3 p-2.5">
+            <!-- item logo-->
+            <div>
+              <img src="./img/simple/antenaa.svg" alt="logo" />
+            </div>
+            <div class="flex w-full items-center justify-between">
+              <a href="./billing.html" id="text3" class="w-full">Billing</a>
+              <div class="w-8 text-center rounded-xl bg-gray-200">4</div>
+            </div>
+          </div>
+          <!-- item 4 -->
+          <div id="item4" class="flex gap-3 p-2.5">
+            <!-- item logo-->
+            <div>
+              <img class="w-full" src="./img/simple/Calendar1.svg" alt="logo" />
+            </div>
+            <a href="./calendar.html" id="text4" class="w-full">Calendar</a>
+          </div>
+          <!-- item 5 -->
+          <div id="item5" class="flex gap-3 p-2.5">
+            <!-- item logo-->
+            <div>
+              <img class="w-full" src="./img/simple/Inbox.svg" alt="logo" />
+            </div>
+            <div class="flex w-full items-center justify-between">
+              <a href="./document.html" id="text5" class="w-full">Documents</a>
+              <div class="w-8 text-center rounded-xl bg-gray-200">12</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- mobile menu -->
+      <div id="menu" class="hidden absolute top-0 left-0 pt-8 bg-white min-h-screen border border-gray-200">
+        <div class="w-[265px] flex flex-col">
+        <!-- title logo -->
+        <div class="max-w-mxs flex items-center gap-2 py-5 px-3">
+          <img src="./img/simple/Mark.svg" alt="logo" />
+          <h1 class="font-semibold hidden md:block lg:text-xl xl:text-2xl">
+            Civil<span class="font-bold">Base</span>
+          </h1>
+        </div>
+        <!-- menu -->
+        <div class="flex flex-col text-sm text-gray-600 px-2.5">
+          <!-- item 1 -->
+          <div id="items" class="flex gap-3 p-2.5">
+            <!-- item logo-->
+            <div>
+              <img class="w-full" src="./img/simple/Home1.svg" alt="logo" />
+            </div>
+            <a href="./index.html" id="texts" class="w-full">Home</a>
+          </div>
+          <!-- item 2 -->
+          <div id="items2" class="flex gap-3 p-2.5">
+            <!-- item logo-->
+            <div class="w-6">
+              <img class="w-full" src="./img/simple/Users.svg" alt="logo" />
+            </div>
+            <div class="flex w-full items-center justify-between">
+              <a href="./students.html" id="texts2" class="w-full">Students</a>
+              <div class="w-8 text-center rounded-xl bg-gray-200">3</div>
+            </div>
+          </div>
+          <!-- item 3 -->
+          <div id="items3" class="flex gap-3 p-2.5">
+            <!-- item logo-->
+            <div>
+              <img src="./img/simple/antenaa.svg" alt="logo" />
+            </div>
+            <div class="flex w-full items-center justify-between">
+              <a href="./billing.html" id="texts3" class="w-full">Billing</a>
+              <div class="w-8 text-center rounded-xl bg-gray-200">4</div>
+            </div>
+          </div>
+          <!-- item 4 -->
+          <div id="items4" class="flex gap-3 p-2.5">
+            <!-- item logo-->
+            <div>
+              <img class="w-full" src="./img/simple/Calendar1.svg" alt="logo" />
+            </div>
+            <a href="./calendar.html" id="texts4" class="w-full">Calendar</a>
+          </div>
+          <!-- item 5 -->
+          <div id="items5" class="flex gap-3 p-2.5">
+            <!-- item logo-->
+            <div>
+              <img class="w-full" src="./img/simple/Inbox.svg" alt="logo" />
+            </div>
+            <div class="flex w-full items-center justify-between">
+              <a href="./document.html" id="texts5" class="w-full">Documents</a>
+              <div class="w-8 text-center rounded-xl bg-gray-200">12</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!--sidebar  -->
+      <div class="w-full lg:w-[80%]">
+        <!-- header -->
+        <header
+          class="w-full flex items-center justify-between gap-4  p-4 border shadow-md"
+        > 
+           <!-- Hamburger Button -->
+           <div class="lg:hidden">
+            <button
+              id="menu-btn"
+              type="button"
+              class="z-40 block hamburger lg:hidden focus:outline-none"
+            >
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+          </div>
+          <div class="flex items-center justify-between gap-4 w-[90%] lg:w-full  ">
+            <div class=" w-3/4 lg:w-[90%] flex gap-4 items-center">
+              <div><img src="./img/header/Search.svg" alt="logo" /></div>
+              <input
+                class=" pl-2 w-full h-8 outline-none"
+                type="search"
+                placeholder="Search"
+              />
+            </div>
+            <div class="flex items-center gap-5">
+                <div  class="w-5 h-5 relative">
+                    <button id="btn-js-down" class="">
+                      <img src="./img/header/icon-1.svg" alt="logo" />
+                    </button>
+                    
+                  </div>
+              <div class="w-7 h-7"><img src="./img/header/Avatar.svg" alt="logo" /></div>
+            </div>
+          </div>
+        </header>
+        
+      <!-- modal -->
+       <div class="hidden main-js-down w-full h-full  z-10 absolute top-[70px] left-0 bottom-0 right-0">
+        <div class="flex absolute right-5 top-0 z-50 sm:w-96 gap-3 py-4 px-5 items-start shadow-md bg-white rounded-lg">
+          <div class="flex gap-2">
+            <div class="">
+              <img src="./img/students/avatar-5.svg" alt="logo">
+            </div>
+            <div class="w-36 sm:w-72">
+              <h3 class="text-[12px] sm:text-sm text-gray-900 font-semibold">Emilia Gates</h3>
+              <p class=" text-[10px] sm:text-sm text-gray-500 mb-3">
+                Hasn’t checked in yet. 
+                Expected check-in time: 10am
+              </p> 
+              <div class="flex gap-3">
+                <button class="text-[7px] sm:text-sm tex text-white bg-indigo-600 rounded-lg py-2 px-3 " type="checkbox" >
+                  Contact Parent
+                </button>
+                <button id="btn2" class="text-[7px]  sm:text-sm text-gray-900 border border-gray-500 rounded-lg  py-2 px-4">
+                  Ignore
+                </button>
+              </div>
+            </div>
+           </div>
+            <button id="btn3" class="">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L6 4.58579L10.2929 0.292893C10.6834 -0.0976311 11.3166 -0.0976311 11.7071 0.292893C12.0976 0.683417 12.0976 1.31658 11.7071 1.70711L7.41421 6L11.7071 10.2929C12.0976 10.6834 12.0976 11.3166 11.7071 11.7071C11.3166 12.0976 10.6834 12.0976 10.2929 11.7071L6 7.41421L1.70711 11.7071C1.31658 12.0976 0.683417 12.0976 0.292893 11.7071C-0.0976311 11.3166 -0.0976311 10.6834 0.292893 10.2929L4.58579 6L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z" fill="#111827"/>
+              </svg>
+            </button>
+        </div>
+       </div>
+       <!-- main -->
+        <section class="main pl-8 pt-8 pr-5">
+            <!-- main  button -->
+           <div class="flex flex-col  sm:flex-row sm:items-center justify-between mb-2">
+            <button class="flex items-center gap-2 mb-3">
+                <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.5 12.8333L1.66667 7L7.5 1.16667" stroke="#6B7280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="text-xs md:text-sm text-gray-900">Back</span>
+            </button>
+            <div class="flex flex-wrap items-center gap-3">
+                <button class="w-full sm:w-auto flex justify-center  border border-gray-500 rounded-lg py-2 px-4">
+                    <div class="flex items-center gap-2 text-xs md:text-sm text-gray-900">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.5858 0.585786C11.3668 -0.195262 12.6332 -0.195262 13.4142 0.585786C14.1953 1.36683 14.1953 2.63316 13.4142 3.41421L12.6213 4.20711L9.79289 1.37868L10.5858 0.585786Z" fill="#6B7280"/>
+                            <path d="M8.37868 2.79289L0 11.1716V14H2.82842L11.2071 5.62132L8.37868 2.79289Z" fill="#6B7280"/>
+                        </svg>
+                        <span>Edit Info</span>
+                    </div>
+                </button>
+                <button class="w-full sm:w-auto flex justify-center border border-gray-500 rounded-lg py-2 px-4">
+                    <div class=" flex items-center gap-2 text-xs md:text-sm text-gray-900">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.9241 2.61722C17.8757 2.50014 17.804 2.3904 17.7092 2.29502C17.7078 2.2936 17.7064 2.29219 17.705 2.29078C17.5242 2.11106 17.2751 2 17 2H13C12.4477 2 12 2.44772 12 3C12 3.55228 12.4477 4 13 4H14.5858L11.2929 7.29289C10.9024 7.68342 10.9024 8.31658 11.2929 8.70711C11.6834 9.09763 12.3166 9.09763 12.7071 8.70711L16 5.41421V7C16 7.55228 16.4477 8 17 8C17.5523 8 18 7.55228 18 7V3C18 2.86441 17.973 2.73512 17.9241 2.61722Z" fill="#6B7280"/>
+                            <path d="M2 3C2 2.44772 2.44772 2 3 2H5.15287C5.64171 2 6.0589 2.35341 6.13927 2.8356L6.87858 7.27147C6.95075 7.70451 6.73206 8.13397 6.3394 8.3303L4.79126 9.10437C5.90756 11.8783 8.12168 14.0924 10.8956 15.2087L11.6697 13.6606C11.866 13.2679 12.2955 13.0492 12.7285 13.1214L17.1644 13.8607C17.6466 13.9411 18 14.3583 18 14.8471V17C18 17.5523 17.5523 18 17 18H15C7.8203 18 2 12.1797 2 5V3Z" fill="#6B7280"/>
+                         </svg>
+                        <span>Contact Parent</span>
+                    </div>
+                </button>
+                <!-- modal button -->
+                <button class="w-full sm:w-auto flex justify-center bg-indigo-600 rounded-lg py-2 px-4">
+                    <div class="flex items-center gap-2 text-xs md:text-sm text-white ">
+                        <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.83329 16.5H11.1666C12.0871 16.5 12.8333 15.7538 12.8333 14.8333V6.84518C12.8333 6.62416 12.7455 6.4122 12.5892 6.25592L8.07737 1.74408C7.92109 1.5878 7.70913 1.5 7.48811 1.5H2.83329C1.91282 1.5 1.16663 2.24619 1.16663 3.16667V14.8333C1.16663 15.7538 1.91282 16.5 2.83329 16.5Z" fill="#4F46E5"/>
+                            <path d="M6.99996 7.33333V12.3333M6.99996 12.3333L4.49996 9.83333M6.99996 12.3333L9.49996 9.83333M11.1666 16.5H2.83329C1.91282 16.5 1.16663 15.7538 1.16663 14.8333V3.16667C1.16663 2.24619 1.91282 1.5 2.83329 1.5H7.48811C7.70913 1.5 7.92109 1.5878 8.07737 1.74408L12.5892 6.25592C12.7455 6.4122 12.8333 6.62416 12.8333 6.84518V14.8333C12.8333 15.7538 12.0871 16.5 11.1666 16.5Z" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Export Bill</span>
+                    </div>
+                </button>
+            </div>
+           </div>
+          
+           <div class="flex flex-col sm:flex-row sm:items-center gap-4 mb-11">
+                <div class="w-20 flex-shrink  mx-auto sm:mx-0">
+                    <img class="w-full  " src="./img/header/avatar-1.svg" alt="logo">
+                </div>
+                <div class=" mx-auto sm:mx-0">
+                    <div class="flex w-48 md:w-full items-center gap-2 mb-1 mx-auto sm:mx-0">
+                        <h2 class="text-lg sm:text-xl lg:text-2xl xl:text-3xl text-gray-900 font-bold">Jane Cooper</h2>
+                        <a href="#" class=" text-xs text-indigo-800 bg-indigo-100 py-0.5 px-2 rounded-xl ">Toddler</a>
+                    </div>
+                    <div class="flex  flex-wrap sm:items-center gap-x-6 gap-2 text-sm text-gray-500 font-medium">
+                        <a href="#" class="flex items-center gap-1.5">
+                            <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 6C8.65685 6 10 4.65685 10 3C10 1.34315 8.65685 0 7 0C5.34315 0 4 1.34315 4 3C4 4.65685 5.34315 6 7 6Z" fill="#9CA3AF"/>
+                                <path d="M0 15C0 11.134 3.13401 8 7 8C10.866 8 14 11.134 14 15H0Z" fill="#9CA3AF"/>
+                            </svg>
+                            <span class="text-xs md:text-sm">Mary Cooper (Mother)</span>
+                        </a>
+                        <a href="#" class="flex items-center gap-1.5">
+                            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.00300002 1.884L8 5.882L15.997 1.884C15.9674 1.37444 15.7441 0.895488 15.3728 0.545227C15.0016 0.194965 14.5104 -9.35847e-05 14 3.36834e-08H2C1.48958 -9.35847e-05 0.998447 0.194965 0.627178 0.545227C0.255908 0.895488 0.0326041 1.37444 0.00300002 1.884Z" fill="#9CA3AF"/>
+                                <path d="M16 4.118L8 8.118L0 4.118V10C0 10.5304 0.210714 11.0391 0.585786 11.4142C0.960859 11.7893 1.46957 12 2 12H14C14.5304 12 15.0391 11.7893 15.4142 11.4142C15.7893 11.0391 16 10.5304 16 10V4.118Z" fill="#9CA3AF"/>
+                             </svg>
+                            <span class="text-xs md:text-sm">cooper@example.com</span>
+                        </a>
+                        <a href="#" class="flex items-center gap-1.5">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 1C0 0.447715 0.447715 0 1 0H3.15287C3.64171 0 4.0589 0.353413 4.13927 0.835601L4.87858 5.27147C4.95075 5.70451 4.73206 6.13397 4.3394 6.3303L2.79126 7.10437C3.90756 9.87832 6.12168 12.0924 8.89563 13.2087L9.6697 11.6606C9.86603 11.2679 10.2955 11.0492 10.7285 11.1214L15.1644 11.8607C15.6466 11.9411 16 12.3583 16 12.8471V15C16 15.5523 15.5523 16 15 16H13C5.8203 16 0 10.1797 0 3V1Z" fill="#9CA3AF"/>
+                            </svg>
+                            <span class="text-xs md:text-sm">612-512-2048</span>
+                        </a>
+                        <a href="#" class="flex items-center gap-1.5">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0C3.44772 0 3 0.447715 3 1V2H2C0.895431 2 0 2.89543 0 4V14C0 15.1046 0.895431 16 2 16H14C15.1046 16 16 15.1046 16 14V4C16 2.89543 15.1046 2 14 2H13V1C13 0.447715 12.5523 0 12 0C11.4477 0 11 0.447715 11 1V2H5V1C5 0.447715 4.55228 0 4 0ZM4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H12C12.5523 7 13 6.55228 13 6C13 5.44772 12.5523 5 12 5H4Z" fill="#9CA3AF"/>
+                            </svg>
+                            <span class="text-xs md:text-sm">Case # 1234-5678-901</span>
+                        </a>
+                    </div>
+                </div>
+           </div>
+           <div class="flex items-start sm:items-center justify-between mb-6">
+                <div class="flex flex-col sm:flex-row sm:items-center gap-4">
+                    <h2 class="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-950 font-bold">Attendance Data</h2>
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-3">
+                        <div class="w-[70px] border border-gray-400 rounded-lg">
+                            <button class="py-2.5 px-3 border-r border-gray-400">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.70711 0.292893C6.09763 0.683417 6.09763 1.31658 5.70711 1.70711L2.41421 5L5.70711 8.29289C6.09763 8.68342 6.09763 9.31658 5.70711 9.70711C5.31658 10.0976 4.68342 10.0976 4.29289 9.70711L0.292893 5.70711C-0.0976311 5.31658 -0.0976311 4.68342 0.292893 4.29289L4.29289 0.292893C4.68342 -0.0976311 5.31658 -0.0976311 5.70711 0.292893Z" fill="#6B7280"/>
+                                </svg>
+                            </button>
+                            <button class="py-2.5 px-3">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292894 9.70711C-0.0976307 9.31658 -0.0976307 8.68342 0.292894 8.29289L3.58579 5L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292894C0.683417 -0.0976312 1.31658 -0.0976312 1.70711 0.292894L5.70711 4.29289C6.09763 4.68342 6.09763 5.31658 5.70711 5.70711L1.70711 9.70711C1.31658 10.0976 0.683418 10.0976 0.292894 9.70711Z" fill="#6B7280"/>
+                                </svg>
+                            </button>   
+                        </div>
+                        <p class="font-medium text-xs sm:text-sm">1 April, 2023 — 14 April 2023</p>
+                    </div>
+                </div>
+                <button class="flex items-center gap-3 rounded-lg border border-gray-400 py-2 px-4">
+                    <span class="text-xs md:text-sm">Weekly</span>
+                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 0.292893C0.683416 -0.097631 1.31658 -0.097631 1.7071 0.292893L4.99999 3.58579L8.29288 0.292893C8.6834 -0.0976311 9.31657 -0.0976311 9.70709 0.292893C10.0976 0.683417 10.0976 1.31658 9.70709 1.70711L5.7071 5.70711C5.31657 6.09763 4.68341 6.09763 4.29289 5.70711L0.292893 1.70711C-0.0976309 1.31658 -0.0976309 0.683417 0.292893 0.292893Z" fill="#374151"/>
+                    </svg>
+                </button>
+           </div>
+           
+
+           <!-- table  -->
+           <div class="overflow-x-scroll mb-8">
+            <table class="w-full border border-gray-300">
+                <thead>
+                    <tr class="border-b border-gray-300 border bg-gray-50">
+                        <th class="py-3 px-6 text-xs font-medium text-gray-500">
+                            DATE
+                        </th>
+                        <th class="py-3 px-6 text-xs font-medium text-gray-500">
+                            DAY
+                        </th>
+                        <th class="py-3 px-6 text-xs font-medium text-gray-500">
+                            HOURS
+                        </th>
+                        <th class="py-3 px-6 text-xs font-medium text-gray-500">
+                            ATTENDANCE
+                        </th>
+                        <th class="py-3 px-6 text-xs font-medium text-gray-500">
+    
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="font-medium text-sm text-gray-900 py-4 px-6">
+                            1 April, 2023
+                        </td>
+                        <td class=" text-sm text-gray-500 py-4 px-6">
+                            Monday
+                        </td>
+                        <td class=" text-sm text-gray-500 py-4 px-6">
+                            5
+                        </td>
+                        <td class=" py-4 px-6">
+                           <p class="w-16 text-center rounded-lg text-xs font-medium text-green-800 bg-green-100 "> Present</p>
+                        </td>
+                        <td class="text-xs text-indigo-600 py-4 px-6">
+                            Edit
+                        </td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="font-medium text-sm text-gray-900 py-4 px-6">
+                            2 April, 2023
+                        </td>
+                        <td class=" text-sm text-gray-500 py-4 px-6">
+                            Tuesday
+                        </td>
+                        <td class=" text-sm text-gray-500 py-4 px-6">
+                            4
+                        </td>
+                        <td class=" py-4 px-6">
+                           <p class="w-16 text-center rounded-lg text-xs font-medium text-green-800 bg-green-100 "> Present</p>
+                        </td>
+                        <td class="text-xs text-indigo-600 py-4 px-6">
+                            Edit
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="font-medium text-sm text-gray-900 py-4 px-6">
+                            3 April, 2023
+                        </td>
+                        <td class=" text-sm text-gray-500 py-4 px-6">
+                            Wednesday
+                        </td>
+                        <td class=" text-sm text-gray-500 py-4 px-6">
+                            0
+                        </td>
+                        <td class=" py-4 px-6">
+                           <p class="w-16 text-center rounded-lg text-xs font-medium text-red-800 bg-red-100 "> Absent</p>
+                        </td>
+                        <td class="text-xs text-indigo-600 py-4 px-6">
+                            Edit
+                        </td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="font-medium text-sm text-gray-900 py-4 px-6">
+                            4 April, 2023
+                        </td>
+                        <td class=" text-sm text-gray-500 py-4 px-6">
+                            Thursday
+                        </td>
+                        <td class=" text-sm text-gray-500 py-4 px-6">
+                            5
+                        </td>
+                        <td class=" py-4 px-6">
+                           <p class="w-16 text-center rounded-lg text-xs font-medium text-green-800 bg-green-100 "> Present</p>
+                        </td>
+                        <td class="text-xs text-indigo-600 py-4 px-6">
+                            Edit
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="font-medium text-sm text-gray-900 py-4 px-6">
+                            5 April, 2023
+                        </td>
+                        <td class=" text-sm text-gray-500 py-4 px-6">
+                            Friday
+                        </td>
+                        <td class=" text-sm text-gray-500 py-4 px-6">
+                            5
+                        </td>
+                        <td class=" py-4 px-6">
+                           <p class="w-16 text-center rounded-lg text-xs font-medium text-yellow-800 bg-yellow-100 ">Holiday</p>
+                        </td>
+                        <td class="text-xs text-indigo-600 py-4 px-6">
+                            Edit
+                        </td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="font-medium text-sm text-gray-900 py-4 px-6">
+                            6 April, 2023
+                        </td>
+                        <td class=" text-sm text-gray-500 py-4 px-6">
+                            Saturday
+                        </td>
+                        <td class=" text-sm text-gray-500 py-4 px-6">
+                            0
+                        </td>
+                        <td class=" py-4 px-6">
+                           <p class="w-16 text-center rounded-lg text-xs font-medium text-green-800 bg-green-100 "> Present</p>
+                        </td>
+                        <td class="text-xs text-indigo-600 py-4 px-6">
+                            Edit
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="font-medium text-sm text-gray-900 py-4 px-6">
+                            7 April, 2023
+                        </td>
+                        <td class=" text-sm text-gray-500 py-4 px-6">
+                            Sunday
+                        </td>
+                        <td class=" text-sm text-gray-500 py-4 px-6">
+                            0
+                        </td>
+                        <td class=" py-4 px-6">
+                           <p class="w-16 text-center rounded-lg text-xs font-medium text-yellow-800 bg-yellow-100 ">Holiday</p>
+                        </td>
+                        <td class="text-xs text-indigo-600 py-4 px-6">
+                            Edit
+                        </td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="font-medium text-sm text-gray-900 py-4 px-6">
+                            8 April, 2023
+                        </td>
+                        <td class=" text-sm text-gray-500 py-4 px-6">
+                            Monday
+                        </td>
+                        <td class=" text-sm text-gray-500 py-4 px-6">
+                            2
+                        </td>
+                        <td class=" py-4 px-6">
+                           <p class="w-16 text-center rounded-lg text-xs font-medium text-green-800 bg-green-100 "> Present</p>
+                        </td>
+                        <td class="text-xs text-indigo-600 py-4 px-6">
+                            Edit
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="font-medium text-sm text-gray-900 py-4 px-6">
+                            9 April, 2023
+                        </td>
+                        <td class=" text-sm text-gray-500 py-4 px-6">
+                            Friday
+                        </td>
+                        <td class=" text-sm text-gray-500 py-4 px-6">
+                            0
+                        </td>
+                        <td class=" py-4 px-6">
+                           <p class="w-16 text-center rounded-lg text-xs font-medium text-yellow-800 bg-yellow-100 ">Holiday</p>
+                        </td>
+                        <td class="text-xs text-indigo-600 py-4 px-6">
+                            Edit
+                        </td>
+                    </tr>
+                </tbody>
+               </table>
+           </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
