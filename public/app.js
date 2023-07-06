@@ -287,10 +287,12 @@ let madal = document.querySelector('.madal')
 
 btn2.addEventListener('click', ()=> {
     madal.classList.remove("hidden")
+    document.body.classList.add('overlBody')
 })
 
 btn3.addEventListener('click',()=>{
     madal.classList.add('hidden')
+    document.body.classList.remove('overlBody')
 })
 
 
