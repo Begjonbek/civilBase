@@ -88,8 +88,19 @@ th{
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.083);
 }
+.overl1 {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.083);
+}
 
 .overlBody{
   overflow: hidden;
 
+}
+#myChart {
+  width: 197px !important;
+  height: 197px !important;
+  
 }

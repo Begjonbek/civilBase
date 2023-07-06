@@ -263,7 +263,7 @@ let main1 = document.querySelector(".main-js-down")
 let box2 = document.querySelector('#btn2')
 let box3 = document.querySelector('#btn3')
 
-let over = document.querySelector('.fixed')
+
 
 let bulur = document.querySelector('.bulur')
 
@@ -281,4 +281,37 @@ box3.addEventListener('click', () => {
     document.body.classList.remove('overlBody')
 })
 
+let btn2 = document.querySelector('.btn-2')
+let btn3 = document.querySelector('.btn-3')
+let madal = document.querySelector('.madal')
 
+btn2.addEventListener('click', ()=> {
+    madal.classList.remove("hidden")
+})
+
+btn3.addEventListener('click',()=>{
+    madal.classList.add('hidden')
+})
+
+
+
+const ctx = document.getElementById("myChart");
+
+new Chart(ctx, {
+  type: "doughnut",
+  data: {
+    labels: ["Remaining", "Utilized "],
+    datasets: [
+      {
+       
+        data: [ 200, 160],
+        backgroundColor: [
+          "rgb(37, 37, 162)",
+          "rgb(149, 64, 228)",
+        ],
+        hoverOffset: 4,
+      },
+    ],
+  },
+
+});

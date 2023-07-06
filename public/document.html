@@ -17,7 +17,7 @@
     <!-- title -->
     <title>Document</title>
   </head>
-  <body class="font-inter " >
+  <body class="font-inter overlBody" >
     <!-- saidbar -->
     <div class="max-w-xll flex mx-auto relative" >
       <!-- simple -->
@@ -248,7 +248,7 @@
                     </div>
                 </button>
                 <!-- modal button -->
-                <button class="w-full sm:w-auto flex justify-center bg-indigo-600 rounded-lg py-2 px-4">
+                <button class="btn-2 relative w-full sm:w-auto flex justify-center bg-indigo-600 rounded-lg py-2 px-4">
                     <div class="flex items-center gap-2 text-xs md:text-sm text-white ">
                         <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2.83329 16.5H11.1666C12.0871 16.5 12.8333 15.7538 12.8333 14.8333V6.84518C12.8333 6.62416 12.7455 6.4122 12.5892 6.25592L8.07737 1.74408C7.92109 1.5878 7.70913 1.5 7.48811 1.5H2.83329C1.91282 1.5 1.16663 2.24619 1.16663 3.16667V14.8333C1.16663 15.7538 1.91282 16.5 2.83329 16.5Z" fill="#4F46E5"/>
@@ -257,6 +257,26 @@
                         <span>Export Bill</span>
                     </div>
                 </button>
+                 <!-- modal -->
+                <div class="madal hidden overl1 w-full h-screen  z-10 absolute top-0 left-0 bottom-0 right-0">
+                  <div class="flex flex-col absolute left-[10%] sm:left-[17%] md:left-[20%] lg:left-[30%] right-[10%] sm:right-[17%] md:right-[20%] lg:right-[30%] p-6 top-24 sm:top-40 md:top-60 lg:top-72 z-50  items-start shadow-md bg-white rounded-lg">
+                    <div class=" flex flex-col mb-6">
+                      <div class="w-12 h-12 flex  items-center justify-center rounded-full bg-green-200 mb-5 mx-auto">
+                        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5 3H3C1.89543 3 1 3.89543 1 5V17C1 18.1046 1.89543 19 3 19H13C14.1046 19 15 18.1046 15 17V5C15 3.89543 14.1046 3 13 3H11M5 3C5 4.10457 5.89543 5 7 5H9C10.1046 5 11 4.10457 11 3M5 3C5 1.89543 5.89543 1 7 1H9C10.1046 1 11 1.89543 11 3M8 10H11M8 14H11M5 10H5.01M5 14H5.01" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                      </div>
+                      <h3 class="mb-2 text-gray-900 text-sm sm:text-base md:text-lg font-medium mx-auto">Export Bill</h3>
+                      <p class=" text-center text-[10px] sm:text-xs md:text-sm text-gray-400">You can export a pre-filled PDF form, or a simplified guide which helps you fill out the online application</p>
+                    </div>
+                      <button type="" class="text-center w-full rounded-md py-2 mb-3 bg-indigo-600 text-white text-[10px] sm:text-xs md:text-sm " >
+                        Export PDF Bill
+                      </button>
+                      <button class="btn-3 text-center w-full rounded-md border border-gray-400 py-2 text-[10px] sm:text-xs md:text-sm text-gray-900">
+                        Cancel
+                      </button>
+                  </div>
+                </div>
             </div>
            </div>
           
@@ -299,6 +319,55 @@
                     </div>
                 </div>
            </div>
+           <!-- rouming -->
+           <div class="flex flex-col sm:flex-row gap-5  mb-12">
+            <div class="max-w-[373px] border border-gray-100 border-collapse shadow-md rounded-lg">
+              <div class="border-b border-gray-100 py-5 px-8">
+                <p class="text-[#828282] text-xs sm:text-sm md:text-base font-semibold mb-2">Remaining Hours</p>
+                <h3 class="text-[#0B1354] text-2xl sm:text-3xl md:text-4xl font-medium mb-1.5">72</h3>
+                <p class="text-[#4F4F4F] text-xs sm:text-sm md:text-base">Total Allocated: <span class="font-medium">120 hours</span></p>
+              </div>
+              <div class="py-5 px-6">
+                <div>
+                  <canvas width="190" id="myChart"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="max-w-[373px] flex flex-col gap-7">
+              <div class="flex items-center gap-5 py-4 sm:py-7 px-4 md:px-8 shadow-md rounded-md">
+                <div class="">
+                  <svg width="46" height="42" viewBox="0 0 46 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.7708 3.29647C20.0646 -0.78144 25.9359 -0.781442 28.2297 3.29647L44.9706 33.0581C47.2204 37.0577 44.3301 41.9997 39.7412 41.9997H6.25935C1.67039 41.9997 -1.2199 37.0577 1.02989 33.0581L17.7708 3.29647ZM26 33C26 34.6569 24.6569 36 23 36C21.3431 36 20 34.6569 20 33C20 31.3431 21.3431 30 23 30C24.6569 30 26 31.3431 26 33ZM23 9C21.3431 9 20 10.3431 20 12V21C20 22.6569 21.3431 24 23 24C24.6569 24 26 22.6569 26 21V12C26 10.3431 24.6569 9 23 9Z" fill="#F59E0B"/>
+                  </svg>
+                </div>
+                <div class="">
+                  <p class="text-[#4F4F4F] font-semibold mb-1.5 text-sm sm:text-base md:text-lg">Bills Due</p>
+                  <p class="text-[#4F4F4F]  text-xs sm:text-sm md:text-base">for 03/14/2023 to 03/31/2023</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-5 py-4 sm:py-7 px-4 md:px-8 shadow-md rounded-md">
+                <div class="">
+                  <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.5 3.25C11.5 1.73122 12.7312 0.5 14.25 0.5H14.2775C15.7963 0.5 17.0275 1.73122 17.0275 3.25C17.0275 4.76878 15.7963 6 14.2775 6H14.25C12.7312 6 11.5 4.76878 11.5 3.25Z" fill="#5165C4"/>
+                    <path d="M17 11.5C17 9.98122 15.7688 8.75 14.25 8.75C12.7312 8.75 11.5 9.98122 11.5 11.5V14.25C8.46243 14.25 6 16.7124 6 19.75V22.5C2.96243 22.5 0.5 24.9624 0.5 28V29.8791C1.51388 30.1632 2.49372 30.6076 3.40043 31.212C4.9746 32.2615 7.0254 32.2615 8.59958 31.212C12.0212 28.931 16.4788 28.931 19.9004 31.212C21.4746 32.2615 23.5254 32.2615 25.0996 31.212C28.5212 28.931 32.9788 28.931 36.4004 31.212C37.9746 32.2615 40.0254 32.2615 41.5996 31.212C42.5063 30.6076 43.4861 30.1632 44.5 29.8791V28C44.5 24.9624 42.0376 22.5 39 22.5V19.75C39 16.7124 36.5376 14.25 33.5 14.25V11.5C33.5 9.98122 32.2688 8.75 30.75 8.75C29.2312 8.75 28 9.98122 28 11.5V14.25H25.25V11.5C25.25 9.98122 24.0188 8.75 22.5 8.75C20.9812 8.75 19.75 9.98122 19.75 11.5V14.25H17V11.5Z" fill="#5165C4"/>
+                    <path d="M44.5 35.8867C41.0989 38.0689 36.7213 38.0361 33.3496 35.7883C31.7754 34.7389 29.7246 34.7389 28.1504 35.7883C24.7288 38.0694 20.2712 38.0694 16.8496 35.7883C15.2754 34.7389 13.2246 34.7389 11.6504 35.7883C8.27873 38.0361 3.90105 38.0689 0.5 35.8867V41.75C0.5 43.2688 1.73122 44.5 3.25 44.5H41.75C43.2688 44.5 44.5 43.2688 44.5 41.75V35.8867Z" fill="#5165C4"/>
+                    <path d="M19.75 3.25C19.75 1.73122 20.9812 0.5 22.5 0.5H22.5275C24.0463 0.5 25.2775 1.73122 25.2775 3.25C25.2775 4.76878 24.0463 6 22.5275 6H22.5C20.9812 6 19.75 4.76878 19.75 3.25Z" fill="#5165C4"/>
+                    <path d="M28 3.25C28 1.73122 29.2312 0.5 30.75 0.5H30.7775C32.2963 0.5 33.5275 1.73122 33.5275 3.25C33.5275 4.76878 32.2963 6 30.7775 6H30.75C29.2312 6 28 4.76878 28 3.25Z" fill="#5165C4"/>
+                  </svg>
+                    
+                </div>
+                <div class="">
+                  <p class="text-[#4F4F4F] font-semibold mb-1.5 text-sm sm:text-base md:text-lg">Birthday Reminder</p>
+                  <p class="text-[#4F4F4F] text-xs sm:text-sm md:text-base ">April 15, 2023</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-5  py-6 px-4 md:px-8 shadow-md rounded-md">
+                <h3 class="text-[#0B1354] text-4xl   sm:text-5xl md:text-6xl xl:text-7xl font-medium">360</h3>
+                  <p class="text-[#4F4F4F]  text-xs sm:text-sm md:text-base">Lifetime Billable hours</p>
+              </div>
+            </div>
+           </div>
+           <!-- table data -->
            <div class="flex items-start sm:items-center justify-between mb-6">
                 <div class="flex flex-col sm:flex-row sm:items-center gap-4">
                     <h2 class="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-950 font-bold">Attendance Data</h2>
@@ -510,6 +579,7 @@
       </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>
